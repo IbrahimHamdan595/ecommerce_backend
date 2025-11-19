@@ -14,7 +14,7 @@ from app.routers import category_router, product_router, cart_router
 async def lifespan(app: FastAPI):
 	# start up
 	await connect_to_mongo()
-	print("MongoDB connected")
+	print("MongoDB connected ..")
 	yield
 	# shutdown
 	print("Closing MongoDB ..")
